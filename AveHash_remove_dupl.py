@@ -1,5 +1,6 @@
 #!/usr/bin/python
 # -*- coding: <encoding name> -*-
+# author: Zcq in Horizon
 import cv2
 import  numpy as np
 import time;  
@@ -120,6 +121,7 @@ print('\nCount：{} frame, Time of one frame: {:4.2f}ms \n'.format(count,(end-st
 print('Before imgNum: {}'.format(imgNum))
 print('After  imgNum: {}'.format(len(imgs)))
 
+'''
 if os.path.exists(savePath):
     shutil.rmtree(savePath)
 os.mkdir(savePath)
@@ -128,3 +130,4 @@ for i in imgs:
     img=Image.open(i)
     img.save(savePath+i.split('/')[-1])
 print('\nSave OK')
+'''
