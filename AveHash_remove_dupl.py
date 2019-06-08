@@ -69,9 +69,7 @@ for i in range(len(files)):
         continue
     imgs.append(os.path.join(imgPath,files[i]))     
 paths = imgs
-#把最后的摄像头id _01  _00 _02放到前面排序
 paths_1=[x.split("_")[-1]+"\t"+x for x in paths if len(x.split("_")[-1].split(".")[0])<=2]
-#没有摄像头id的直接sort排序 各个数据段都是排好序的
 paths_2=[x for x in paths if len(x.split("_")[-1].split(".")[0])>2]
 paths_1.sort()
 paths_2.sort()
@@ -93,7 +91,7 @@ for i in range(imgNum):
         break
     except IndexError:  
         break   
-    remove = 0     #remove 是在连续帧范围内计算哈希值的时候，前面一个被移除掉后面一个，就往前进1 j-remove
+    remove = 0   
     for j in range(i+1,i+capFrameNum):
         try:
             img2 = cv2.imread(imgs[j-remove])
