@@ -8,6 +8,7 @@ Image Set remove duplication
 20180605_131303__00004218_01.jpg, Similarity：94.53%,  remove:20180605_131303__00004218_01.jpg	
 20180605_131303__00004378_01.jpg, Similarity：94.92%,  remove:20180605_131303__00004378_01.jpg	
 20180605_131303__00004738_01.jpg, Similarity：94.92%,  remove:20180605_131303__00004738_01.jpg	
+
 .......
 
 Result:
